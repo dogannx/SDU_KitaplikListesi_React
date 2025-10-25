@@ -8,14 +8,14 @@ import FavoriPaneli from './FavoriPaneli'
 function App() {
   // Sabit kitap listesi
   const kitaplar = [
-    { id: 1, baslik: "React'e Giriş", yazar: "D. Usta", kategori: "Web" },
-    { id: 2, baslik: "İleri JavaScript", yazar: "S. Kılıç", kategori: "Web" },
-    { id: 3, baslik: "Veri Yapıları", yazar: "A. Demir", kategori: "CS" },
-    { id: 4, baslik: "Algoritmalar", yazar: "E. Kaya", kategori: "CS" },
-    { id: 5, baslik: "UI/UX Temelleri", yazar: "N. Akın", kategori: "Tasarım" },
-    { id: 6, baslik: "Python Programlama", yazar: "M. Özkan", kategori: "Programlama" },
-    { id: 7, baslik: "Veritabanı Tasarımı", yazar: "K. Yılmaz", kategori: "CS" },
-    { id: 8, baslik: "Web Tasarım", yazar: "L. Çelik", kategori: "Tasarım" }
+    { id: 1, baslik: "React'e Giriş", yazar: "Dr. Mehmet Usta", kategori: "Web" },
+    { id: 2, baslik: "İleri JavaScript", yazar: "Prof. Dr. Selçuk Kılıç", kategori: "Web" },
+    { id: 3, baslik: "Veri Yapıları", yazar: "Doç. Dr. Ahmet Demir", kategori: "CS" },
+    { id: 4, baslik: "Algoritmalar", yazar: "Dr. Öğr. Üyesi Emre Kaya", kategori: "CS" },
+    { id: 5, baslik: "UI/UX Temelleri", yazar: "Öğr. Gör. Nilay Akın", kategori: "Tasarım" },
+    { id: 6, baslik: "Python Programlama", yazar: "Dr. Murat Özkan", kategori: "Programlama" },
+    { id: 7, baslik: "Veritabanı Tasarımı", yazar: "Prof. Dr. Kemal Yılmaz", kategori: "CS" },
+    { id: 8, baslik: "Web Tasarım", yazar: "Öğr. Gör. Leyla Çelik", kategori: "Tasarım" }
   ]
 
   // State'ler
