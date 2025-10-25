@@ -1,63 +1,69 @@
-# Mini Kitaplık
+# SDU Kitaplık Listesi - React
 
-Okul kulübü için geliştirilmiş küçük bir web kitaplığı uygulaması. Kullanıcılar kitapları arayabilir, kategorilere göre filtreleyebilir ve favorilerine ekleyebilir.
+Süleyman Demirel Üniversitesi için geliştirilmiş küçük bir web kitaplığı uygulaması. Kullanıcılar kitapları arayabilir, kategorilere göre filtreleyebilir ve favorilerine ekleyebilir.
 
-## Özellikler
+## 🚀 Özellikler
 
 - 📚 **Kitap Arama**: Başlık veya yazara göre arama yapabilme
-- 🏷️ **Kategori Filtresi**: Kitapları kategorilere göre filtreleme
+- 🏷️ **Kategori Filtresi**: Kitapları kategorilere göre filtreleme (Web, CS, Tasarım, Programlama)
 - ⭐ **Favori Sistemi**: Kitapları favorilere ekleme/çıkarma
 - 💾 **Veri Kalıcılığı**: Arama metni ve favoriler localStorage'da saklanır
 - 📱 **Responsive Tasarım**: Mobil ve masaüstü uyumlu
+- 🎨 **Modern UI**: Temiz ve kullanıcı dostu arayüz
 
-## Teknolojiler
+## 🛠️ Teknolojiler
 
-- React 19.1.1
-- Vite
-- CSS3
-- LocalStorage API
+- **React 19.1.1** - Modern React hooks kullanımı
+- **Vite** - Hızlı geliştirme ortamı
+- **CSS3** - Responsive ve modern stiller
+- **LocalStorage API** - Veri kalıcılığı
 
-## Kurulum
+## 📦 Kurulum
 
-1. Projeyi klonlayın:
+1. **Projeyi klonlayın:**
 ```bash
-git clone <repository-url>
-cd deneme
+git clone https://github.com/dogannx/SDU_Kitapl-kListesi_React.git
+cd SDU_Kitapl-kListesi_React
 ```
 
-2. Bağımlılıkları yükleyin:
+2. **Bağımlılıkları yükleyin:**
 ```bash
 npm install
 ```
 
-3. Geliştirme sunucusunu başlatın:
+3. **Geliştirme sunucusunu başlatın:**
 ```bash
 npm run dev
 ```
 
-## Proje Yapısı
+4. **Tarayıcıda açın:**
+```
+http://localhost:5173
+```
+
+## 📁 Proje Yapısı
 
 ```
 src/
-├── components/
-│   ├── AramaCubugu.jsx      # Arama input bileşeni
-│   ├── KategoriFiltre.jsx   # Kategori seçim bileşeni
-│   ├── KitapListe.jsx       # Kitap listesi bileşeni
-│   ├── KitapKartı.jsx       # Tekil kitap kartı bileşeni
-│   └── FavoriPaneli.jsx     # Favori kitaplar paneli
 ├── App.jsx                  # Ana uygulama bileşeni
 ├── App.css                  # Ana stiller
-└── main.jsx                 # Uygulama giriş noktası
+├── AramaCubugu.jsx          # Arama input bileşeni
+├── KategoriFiltre.jsx       # Kategori seçim bileşeni
+├── KitapListe.jsx           # Kitap listesi bileşeni
+├── KitapKartı.jsx           # Tekil kitap kartı bileşeni
+├── FavoriPaneli.jsx         # Favori kitaplar paneli
+├── main.jsx                 # Uygulama giriş noktası
+└── index.css                # Global stiller
 ```
 
-## Bileşen Açıklamaları
+## 🔧 Bileşen Açıklamaları
 
 ### App.jsx
 Ana state yönetimi ve filtreleme mantığını içerir:
-- `kitaplar`: Sabit kitap listesi
-- `aramaMetni`: Arama metni state'i
-- `kategori`: Seçili kategori state'i
-- `favoriler`: Favori kitap ID'leri dizisi
+- `kitaplar`: Sabit kitap listesi (8 adet örnek kitap)
+- `arama`: Arama metni state'i
+- `seciliKategori`: Seçili kategori state'i
+- `favoriKitaplar`: Favori kitap ID'leri dizisi
 
 ### AramaCubugu.jsx
 Kontrollü input bileşeni. Arama metnini App bileşenine bildirir.
@@ -74,26 +80,38 @@ Tekil kitap bilgilerini gösterir ve favori ekleme/çıkarma işlevini sağlar.
 ### FavoriPaneli.jsx
 Favori kitapları listeler ve favoriden çıkarma işlevini sağlar.
 
-## Kullanım
+## 📖 Kullanım
 
-1. **Arama**: Üst kısımdaki arama çubuğuna kitap başlığı veya yazar adı yazın
-2. **Filtreleme**: Kategori dropdown'ından istediğiniz kategoriyi seçin
-3. **Favori Ekleme**: Kitap kartındaki "Favori Ekle" butonuna tıklayın
-4. **Favori Görüntüleme**: Sağ panelde favori kitaplarınızı görün
-5. **Favoriden Çıkarma**: Favori panelindeki "Kaldır" butonuna tıklayın
+1. **🔍 Arama**: Üst kısımdaki arama çubuğuna kitap başlığı veya yazar adı yazın
+2. **🏷️ Filtreleme**: Kategori dropdown'ından istediğiniz kategoriyi seçin
+3. **⭐ Favori Ekleme**: Kitap kartındaki "Favori Ekle" butonuna tıklayın
+4. **📋 Favori Görüntüleme**: Sağ panelde favori kitaplarınızı görün
+5. **🗑️ Favoriden Çıkarma**: Favori panelindeki "Kaldır" butonuna tıklayın
 
-## Veri Kalıcılığı
+## 💾 Veri Kalıcılığı
 
 Uygulama aşağıdaki verileri localStorage'da saklar:
-- Arama metni
-- Favori kitap ID'leri
+- `arama`: Arama metni
+- `favoriKitaplar`: Favori kitap ID'leri
 
 Bu sayede sayfa yenilendiğinde veya uygulama kapatılıp açıldığında veriler korunur.
 
-## Canlı Demo
+## 📚 Örnek Kitaplar
 
-[Vercel'de Canlı Demo](https://mini-kitaplik.vercel.app)
+Uygulama şu kategorilerde örnek kitaplar içerir:
+- **Web**: React'e Giriş, İleri JavaScript
+- **CS**: Veri Yapıları, Algoritmalar, Veritabanı Tasarımı
+- **Tasarım**: UI/UX Temelleri, Web Tasarım
+- **Programlama**: Python Programlama
 
-## Geliştirici
+## 🌐 Canlı Demo
 
-Bu proje okul kulübü için geliştirilmiştir.
+[GitHub Pages'de Canlı Demo](https://dogannx.github.io/SDU_Kitapl-kListesi_React/)
+
+## 👨‍💻 Geliştirici
+
+Bu proje Süleyman Demirel Üniversitesi için geliştirilmiştir.
+
+## 📄 Lisans
+
+Bu proje eğitim amaçlı geliştirilmiştir.
