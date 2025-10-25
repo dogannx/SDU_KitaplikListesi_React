@@ -1,0 +1,249 @@
+/* Ana uygulama stilleri */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Header stilleri */
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filtreler {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Arama çubuğu stilleri */
+.arama-cubugu {
+  flex: 1;
+  min-width: 250px;
+}
+
+.arama-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.arama-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Kategori filtresi stilleri */
+.kategori-filtre {
+  min-width: 150px;
+}
+
+.kategori-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.kategori-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Ana içerik düzeni */
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Kitap listesi stilleri */
+.kitap-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kitap-kartı {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kitap-kartı:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kitap-bilgileri {
+  flex: 1;
+}
+
+.kitap-baslik {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.kitap-yazar-kategori {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Favori butonu stilleri */
+.favori-butonu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.favori-ekle {
+  background-color: white;
+  color: #666;
+  border: 2px solid #e1e5e9;
+}
+
+.favori-ekle:hover {
+  background-color: #f8f9fa;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.favoride {
+  background-color: #ffc107;
+  color: #333;
+  border: 2px solid #ffc107;
+}
+
+.favoride:hover {
+  background-color: #ffb300;
+  border-color: #ffb300;
+}
+
+.star {
+  font-size: 16px;
+}
+
+/* Favori paneli stilleri */
+.favori-paneli {
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.favori-paneli h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.bos-favori {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.favori-listesi {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favori-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.favori-item:last-child {
+  border-bottom: none;
+}
+
+.favori-kitap-adı {
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.favoriden-cikar-butonu {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favoriden-cikar-butonu:hover {
+  background-color: #c82333;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .filtreler {
+    flex-direction: column;
+  }
+  
+  .arama-cubugu,
+  .kategori-filtre {
+    min-width: auto;
+  }
+  
+  .kitap-kartı {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .favori-butonu {
+    align-self: center;
+  }
+}
