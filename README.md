@@ -1,6 +1,6 @@
 # SDU Kitaplık Listesi - React
 
-[🌐 **Canlı Demo**](https://dogannx.github.io/SDU_KitaplikListesi_React/) | [📁 **GitHub Repository**](https://github.com/dogannx/SDU_KitaplikListesi_React)
+[🌐 **Canlı Demo**](https://dogannx.github.io/SDU_KitaplikListesi_React/)
 
 Süleyman Demirel Üniversitesi için geliştirilmiş küçük bir web kitaplığı uygulaması. Kullanıcılar kitapları arayabilir, kategorilere göre filtreleyebilir ve favorilerine ekleyebilir.
 
